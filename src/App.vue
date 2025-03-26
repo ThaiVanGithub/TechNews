@@ -3,7 +3,7 @@ import Pagination from '@/components/Pagination.vue';
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import NewsCard from '@/components/NewsCard.vue';
-
+import ChatBox from '@/components/ChatBox.vue';
 
 export default {
   name: 'App',
@@ -12,6 +12,7 @@ export default {
     AppFooter,
     NewsCard,
     Pagination,
+    ChatBox
   }
 }
 
@@ -53,8 +54,10 @@ export default {
     <AppHeader />
     <main class="main-content">
       <router-view />
+      <ChatBox />
     </main>
     <Pagination />
     <AppFooter />
   </div>
+
 </template>
